@@ -1,0 +1,144 @@
+<%- include('../views/partials/header') %>
+
+  <!-- <section class="container col-xxl-8 px-4 py-lg-3 mb-4">
+    <div class="row flex-lg-row-reverse align-items-center overflow-hidden text-lg-start text-center g-5 py-lg-5 pb-3">
+      <div class="col-10 col-sm-8 col-lg-7 flex-grow-1 pe-lg-1" data-aos="zoom-out-left" data-aos-duration="1200">
+        <img src="/images/contact.png" class="d-block mx-lg-auto img-fluid" alt="Contact Image" height="720">
+      </div>
+      <div class="col-lg-5 pb-4">
+        <h1 class="display-2 fw-bold lh-1 mb-3" data-aos="slide-right" data-aos-duration="800">
+          <%= title %>
+        </h1>
+        <p class="lead" data-aos="fade-right" data-aos-duration="1100">Envie sua mensagem ou utilize um de nossos <span
+            class="text-secondary fw-bold">canais de atendimento</span>. Entraremos em contato o mais breve possível.
+        </p>
+        <div class="mt-5">
+          <div class="d-flex align-items-center bg-primary text-white mb-2" data-aos="slide-right"
+            data-aos-duration="1000" style="border: 1px solid #000;border-radius: 25px;">
+            <i class="bi bi-envelope fs-3 mx-3"></i>
+            <a class="link-light text-decoration-none fs-5 fw-normal" data-content="administracao@rctelecom.com.br"
+              href="mailto:administracao@rctelecom.com.br" id="contactUs"
+              rel="popover">administracao@rctelecom.com.br</a>
+          </div>
+          <div class="d-flex align-items-center bg-primary text-white mb-2" data-aos="slide-right"
+            data-aos-duration="1200" style="border: 1px solid #000;border-radius: 25px;">
+            <i class="bi bi-telephone fs-3 mx-3"></i>
+            <a class="link-light text-decoration-none fs-5 fw-normal" href="tel:1935341000" rel="popover">(19)
+              3534-1000</a>
+          </div>
+          <div class="d-flex align-items-center bg-primary text-white mb-2" data-aos="slide-right"
+            data-aos-duration="1400" style="border: 1px solid #000;border-radius: 25px;">
+            <i class="bi bi-whatsapp fs-3 mx-3"></i>
+            <a class="link-light text-decoration-none fs-5 fw-normal" href="tel:1935341000" rel="popover">(19)
+              99381-6611</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="container col-xxl-8 px-4 py-lg-3 mb-4" id="contato">
+    <div class="row align-items-center overflow-hidden g-lg-5 py-5">
+      <div class="col-lg-6 text-center text-lg-start px-lg-5">
+        <h1 class="display-2 fw-bold lh-1 mb-3" data-aos="fade-right" data-aos-duration="1000">
+          <%= title %>
+        </h1>
+        <p class="lead" data-aos="fade-right" data-aos-duration="1000">Envie sua mensagem ou utilize um de nossos <span
+            class="text-secondary fw-bold">canais de atendimento</span>. Entraremos em contato o mais breve possível.
+        </p>
+        <div class="mt-5 py-4">
+          <div class="d-flex align-items-center bg-bluejeans text-white mb-2" data-aos="fade-right"
+            data-aos-duration="1000" data-aos-anchor="#contato" style="border-radius: 25px;font-size: 1.13rem;">
+            <i class="bi bi-envelope fs-3 mx-3"></i>
+            <a class="link-light text-decoration-none" data-content="administracao@rctelecom.com.br"
+              href="mailto:administracao@rctelecom.com.br" id="contactUs"
+              rel="popover">administracao@rctelecom.com.br</a>
+          </div>
+          <div class="d-flex align-items-center bg-bluejeans text-white mb-2" data-aos="fade-right"
+            data-aos-duration="1100" data-aos-anchor="#contato" style="border-radius: 25px;font-size: 1.15rem;">
+            <i class="bi bi-telephone fs-3 mx-3"></i>
+            <a class="link-light text-decoration-none" href="tel:1935341000" rel="popover">(19)
+              3534-1000</a>
+          </div>
+          <div class="d-flex align-items-center bg-bluejeans text-white mb-2" data-aos="fade-right"
+            data-aos-duration="1200" data-aos-anchor="#contato" style="border-radius: 25px;font-size: 1.15rem;">
+            <i class="bi bi-whatsapp fs-3 mx-3"></i>
+            <a class="link-light text-decoration-none" href="tel:1935341000" rel="popover">(19)
+              99381-6611</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-10 mx-auto">
+        <form class="p-4 p-md-4 border rounded-3 bg-light" method="POST" action="" data-aos="fade-left"
+          data-aos-duration="1000">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="companyInput" name="companyInput" placeholder="Empresa">
+            <label for="companyInput">Empresa</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="nameInput" name="nameInput" placeholder="Nome" required>
+            <label for="nameInput">Nome</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="tel" class="form-control" id="telInput" name="telInput" placeholder="Telefone" required>
+            <label for="telInput">Telefone</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="emailInput" name="emailInput" placeholder="Email" required>
+            <label for="emailInput">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea class="form-control" name="messageInput" id="messageInput" placeholder="Escreva sua mensagem"
+              style="height: 100px"></textarea>
+            <label for="messageInput">Escreva sua mensagem</label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
+          <hr class="my-4">
+          <small class="text-muted">Seu contato é importante para nós.</small>
+        </form>
+      </div>
+    </div>
+  </section>
+  </section>
+
+  <!-- <section class="container bg-white col-xl-10 col-xxl-8 shadow-lg mb-4 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start px-lg-5" data-aos="fade-right" data-aos-duration="800">
+        <h1 class="display-4 fw-bold lh-1 mb-3">Vertically centered hero sign-up form</h1>
+        <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required
+          form group has a validation state that can be triggered by attempting to submit the form without completing
+          it.</p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5" data-aos="zoom-in-left" data-aos-duration="900">
+        <form class="p-4 p-md-4 border rounded-3 bg-light" method="POST" action="">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="companyInput" name="companyInput" placeholder="Empresa"
+              required>
+            <label for="companyInput">Empresa</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="nameInput" name="nameInput" placeholder="Nome" required>
+            <label for="nameInput">Nome</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="tel" class="form-control" id="telInput" name="telInput" placeholder="Telefone" required>
+            <label for="telInput">Telefone</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="emailInput" name="emailInput" placeholder="Email" required>
+            <label for="emailInput">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea class="form-control" name="messageInput" id="messageInput" placeholder="Escreva sua mensagem"
+              style="height: 100px"></textarea>
+            <label for="messageInput">Escreva sua mensagem</label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
+          <hr class="my-4">
+          <small class="text-muted">Seu contato é importante para nós.</small>
+        </form>
+      </div>
+    </div>
+  </section> -->
+
+  <%- include('../views/partials/footer') %>

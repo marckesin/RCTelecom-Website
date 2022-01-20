@@ -1,0 +1,42 @@
+{
+  "name": "rctelecom",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "lint": "eslint --ext js .",
+    "test": "snyk test"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "compression": "^1.7.4",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "~4.16.1",
+    "helmet": "^4.6.0",
+    "http-errors": "~1.6.3",
+    "lodash": "^4.17.21",
+    "morgan": "^1.10.0"
+  },
+  "main": "app.js",
+  "author": "Ronaldo",
+  "license": "ISC",
+  "keywords": [
+    "node",
+    "express",
+    "bootstrap"
+  ],
+  "description": "Reinvenção do site rctelecom.com.br. Desenvolvido em Node, Express e Bootstrap.",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "nodemon": "^2.0.12",
+    "snyk": "^1.826.0"
+  }
+}

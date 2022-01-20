@@ -1,0 +1,54 @@
+<%- include('../views/partials/header') %>
+
+  <section class="container col-xxl-8 px-4 py-lg-3 mb-4">
+    <div class="row flex-lg-row-reverse align-items-center overflow-hidden text-lg-start text-center g-5 py-lg-5 pb-3">
+      <div class="col-10 col-sm-8 col-lg-7 flex-grow-1 pe-lg-1" data-aos="fade-left" data-aos-duration="1000">
+        <img src="/images/products.png" class="d-block mx-lg-auto img-fluid" alt="Company Image" height="720">
+      </div>
+      <div class="col-lg-5 pb-4">
+        <h1 class="display-2 fw-bold lh-1 mb-3" data-aos="slide-right" data-aos-duration="800">
+          <%= title %>
+        </h1>
+        <p class="lead" data-aos="fade-right" data-aos-duration="1100">Reduza os custos de telefonia. Conheça nossas
+          soluções profissionais para atender a sua empresa.
+        </p>
+      </div>
+    </div>
+
+    <div class="col col-lg-5 shadow border overflow-hidden pt-0 mx-0" style="border-radius: 15px;">
+      <form action="" method="POST" class="bg-light border-bottom pt-3 p-2">
+        <div class="d-lg-flex align-items-center gap-2">
+          <input type="tel" class="form-control" id="telNumber" name="telNumber" autocomplete="off"
+            placeholder="DDD + número">
+          <button class="btn btn-outline-danger btn-sm my-2" type="submit">Consultar</button>
+        </div>
+      </form>
+      <ul class="list-unstyled mb-0 py-3">
+        <li>
+          <div class="d-flex align-items-center border gap-2 px-3 py-2 m-2" style="border-radius: 25px;">
+            <span class="d-inline-block bg-success rounded-circle" style="width: .5em; height: .5em;"></span>
+            Operadora
+            <% if(data !=undefined) { %>
+              <p class="text-bluejeans fs-5 flex-grow-1 text-end fw-bold mb-0">
+                <%= data.operadora %>
+              </p>
+              <% } %>
+          </div>
+        </li>
+        <li>
+          <div class="d-flex align-items-center border gap-2 px-3 py-2 m-2" style="border-radius: 25px;">
+            <span class="d-inline-block bg-primary rounded-circle" style="width: .5em; height: .5em;"></span>
+            Localidade
+            <% if(data !=undefined) { %>
+              <p class="text-bluejeans fs-5 flex-grow-1 text-end fw-bold mb-0">
+                <%= data.estado %>
+              </p>
+              <% } %>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  </section>
+
+  <%- include('../views/partials/footer') %>

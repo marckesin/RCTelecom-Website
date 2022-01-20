@@ -1,0 +1,13 @@
+<%- include('../views/partials/header') %>
+
+    <div class="container overflow-hidden">
+        <h1><%= message %></h1>
+        <h2><%= error.status %></h2>
+        <pre><%= error.stack %></pre>
+        <div>
+            <img src="/images/error.png" class="d-block mx-lg-auto img-fluid" alt="Not Found Image">
+        </div>
+    </div>
+    </section>
+
+    <%- include('../views/partials/footer') %>
