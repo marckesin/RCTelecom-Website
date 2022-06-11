@@ -30,7 +30,7 @@
   "keywords": [
     "node",
     "express",
-    "bootstrap"
+    "bootstrap5"
   ],
   "description": "Reinvenção do site rctelecom.com.br. Desenvolvido em Node, Express e Bootstrap.",
   "devDependencies": {
