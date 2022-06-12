@@ -28,10 +28,10 @@ router.get("/servicos", (req, res) => {
 router.post("/servicos", async (req, res, next) => {
   await axios
     .get(
-      `http://apilayer.net/api/validate?access_key=${process.env.NUMVERIFY_KEY}&country_code=BR&number=${req.body.telNumber}`
+      `http://apilayer.net/api/validate?access_key=${process.env.NUMVERIFY_KEY}&country_code=BR&number=${req.body.telNumber}`,
     )
-    .then((response) => response)
-    .then((data) => {
+    .then(response => response)
+    .then(data => {
       const { carrier, location: estado } = data.data;
       const [operadora] = carrier.split(" ");
       res.render("servicos", {
@@ -39,7 +39,7 @@ router.post("/servicos", async (req, res, next) => {
         data: { operadora, estado },
       });
     })
-    .catch((error) => {
+    .catch(error => {
       next(error);
     });
 });

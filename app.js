@@ -34,7 +34,7 @@ app.use(
       ],
       "img-src": ["'self'", "data:", "https://images.unsplash.com"],
     },
-  })
+  }),
 );
 
 app.use("/", indexRouter);
