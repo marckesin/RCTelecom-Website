@@ -18,6 +18,7 @@ router.get("/produtos", (req, res) => {
 
 router.get("/produtos/:endpoint", (req, res) => {
   const title = _.startCase(req.params.endpoint);
+
   res.render(`produtos-${req.params.endpoint}`, { title: title });
 });
 
@@ -34,6 +35,7 @@ router.post("/servicos", async (req, res, next) => {
     .then(data => {
       const { carrier, location: estado } = data.data;
       const [operadora] = carrier.split(" ");
+
       res.render("servicos", {
         title: "Serviços",
         data: { operadora, estado },
