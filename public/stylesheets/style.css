@@ -147,7 +147,6 @@ p {
   transition: all 0.2s;
   border-bottom: 3px solid transparent;
 }
-
 .dropdown-item-new:hover {
   color: #37bc9b !important;
   transform: translateY(-3px);
