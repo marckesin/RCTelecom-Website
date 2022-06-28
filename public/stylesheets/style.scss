@@ -157,13 +157,19 @@ p {
   margin-left: 5px;
   transition: all 0.2s;
   border-bottom: 3px solid transparent;
+
+  &:hover {
+    color: variables.$mint-1 !important;
+    transform: translateY(-3px);
+    border-color: variables.$mint-1;
+  }
 }
 
-.dropdown-item-new:hover {
-  color: variables.$mint-1 !important;
-  transform: translateY(-3px);
-  border-color: variables.$mint-1;
-}
+// .dropdown-item-new:hover {
+//   color: variables.$mint-1 !important;
+//   transform: translateY(-3px);
+//   border-color: variables.$mint-1;
+// }
 
 .dropdown-new:hover .dropdown-content-new {
   display: block;
