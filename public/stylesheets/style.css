@@ -181,7 +181,6 @@ p {
   position: relative;
   overflow: hidden;
 }
-
 .nav-link::after {
   content: "";
   position: absolute;
