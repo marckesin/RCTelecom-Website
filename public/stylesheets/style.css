@@ -201,12 +201,10 @@ p {
   border-radius: 15px;
   transition: all 0.2s;
 }
-
 .pabx-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 20px -8px rgba(107, 107, 107, 0.6) !important;
 }
-
 .pabx-card img {
   border-top-right-radius: inherit;
   border-top-left-radius: inherit;
