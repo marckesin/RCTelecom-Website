@@ -239,10 +239,10 @@ p {
 
 .text-mediumgray {
   color: variables.$mediumgray-0;
-}
 
-.text-mediumgray:hover {
-  color: variables.$mediumgray-1;
+  &:hover {
+    color: variables.$mediumgray-1;
+  }
 }
 
 .text-mint {
