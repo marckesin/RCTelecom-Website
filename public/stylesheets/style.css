@@ -91,7 +91,6 @@ p {
 .contact-container a {
   transition: all 0.2s;
 }
-
 .contact-container:hover a {
   color: #ccd1d9;
 }

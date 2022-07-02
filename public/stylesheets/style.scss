@@ -96,12 +96,14 @@ p {
   animation-name: bi-whatsapp;
 }
 
-.contact-container a {
-  transition: all 0.2s;
-}
+.contact-container {
+  a {
+    transition: all 0.2s;
+  }
 
-.contact-container:hover a {
-  color: variables.$mediumgray-0;
+  &:hover a {
+    color: variables.$mediumgray-0;
+  }
 }
 
 .container-play-store {
