@@ -116,7 +116,7 @@ p {
 
   &:hover {
     transform: translateY(-7px) !important;
-    box-shadow: 0 20px 20px -8px rgba(107, 107, 107, 0.6) !important;
+    box-shadow: 0 20px 20px -8px hsla(0, 0%, 42%, 0.6) !important;
   }
 
   img {
@@ -132,7 +132,7 @@ p {
 }
 
 .container-heading {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: hsla(0, 0%, 0%, 0.2);
   backdrop-filter: blur(4px);
 }
 
@@ -147,7 +147,7 @@ p {
   background-color: variables.$lightgray-1;
   padding: 10px;
   width: 25%;
-  box-shadow: 0 20px 20px -8px rgba(107, 107, 107, 0.6);
+  box-shadow: 0 20px 20px -8px hsla(0, 0%, 42%, 0.6);
   z-index: 999;
 }
 
@@ -218,7 +218,7 @@ p {
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 20px -8px rgba(107, 107, 107, 0.6) !important;
+    box-shadow: 0 20px 20px -8px hsla(0, 0%, 42%, 0.6) !important;
   }
 
   img {
@@ -297,7 +297,7 @@ p {
 #navbar {
   top: 0;
   transition: top 0.4s;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: hsla(0, 0%, 0%, 0);
   backdrop-filter: blur(5px);
 }
 
@@ -412,7 +412,7 @@ p {
   #navbar {
     top: 0;
     transition: top 0.4s;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: hsla(0, 0%, 0%, 0);
     backdrop-filter: blur(5px);
   }
 }
