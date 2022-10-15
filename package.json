@@ -40,6 +40,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "nodemon": "^2.0.20",
-    "snyk": "^1.1026.0"
+    "snyk": "^1.1032.0"
   }
 }
