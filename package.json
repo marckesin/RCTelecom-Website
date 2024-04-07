@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "devstart": "nodemon ./bin/www",
+    "start": "node index",
+    "devstart": "nodemon index",
     "lint": "eslint --ext js .",
     "test": "snyk test"
   },
@@ -30,7 +30,8 @@
   "keywords": [
     "node",
     "express",
-    "bootstrap5"
+    "bootstrap5", 
+    "vercel"
   ],
   "description": "Reinvenção do site rctelecom.com.br. Desenvolvido em Node, Express e Bootstrap.",
   "devDependencies": {

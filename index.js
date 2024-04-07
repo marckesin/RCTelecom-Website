@@ -8,7 +8,7 @@ const compression = require("compression");
 const helmet = require("helmet");
 
 const indexRouter = require("./routes/index");
-
+const port = process.env.PORT || 3000;
 const app = express();
 
 // view engine setup
@@ -54,5 +54,7 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500);
   res.render("error", { title: "Not Found" });
 });
+
+app.listen(port);
 
 module.exports = app;
